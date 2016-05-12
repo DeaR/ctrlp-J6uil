@@ -1,3 +1,4 @@
+scriptencoding utf-8
 " J6uil_members extension for CtrlP
 "
 " Maintainer:   DeaR <nayuri@kuonn.mydns.jp>
@@ -35,12 +36,13 @@ call add(g:ctrlp_ext_vars, {
 \ 'accept'    : 'ctrlp#J6uil#members#accept',
 \ 'lname'     : 'J6uil_members',
 \ 'sname'     : 'J6m',
+\ 'exit'      : 'ctrlp#J6uil#members#exit()',
 \ 'type'      : 'line'})
 
 let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)
 
-function! ctrlp#J6uil#members#init(...)
-  return map(copy(b:J6uil_roster.members),
+function! ctrlp#J6uil#members#init()
+  return map(s:mem,
   \ '(v:val.is_online ? "+ " : "  ") .' .
   \ '(v:val.is_owner ? "★ " : "") . ' .
   \ 'v:val.name')
@@ -51,5 +53,10 @@ function! ctrlp#J6uil#members#accept(mode, str)
 endfunction
 
 function! ctrlp#J6uil#members#id()
+  let s:mem = copy(b:J6uil_roster.members)
   return s:id
+endfunction
+
+function! ctrlp#J6uil#members#exit()
+  unlet! s:mem
 endfunction
