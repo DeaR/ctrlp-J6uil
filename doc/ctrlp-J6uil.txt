@@ -1,0 +1,74 @@
+*ctrlp-J6uil.txt*						*ctrlp-J6uil*
+
+Version: 1.0.0
+Author : DeaR <nayuri@kuonn.mydns.jp>
+License: MIT License  {{{
+    Copyright (c) 2016 DeaR <nayuri@kuonn.mydns.jp>
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions: The
+    above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+}}}
+
+==============================================================================
+CONTENTS					*ctrlp-J6uil-contents*
+
+INTRODUCTION					|ctrlp-J6uil-introduction|
+REQUIREMENTS					|ctrlp-J6uil-requirements|
+INTERFACE					|ctrlp-J6uil-interface|
+  COMMANDS					|ctrlp-J6uil-commands|
+CHANGELOG					|ctrlp-J6uil-changelog|
+
+
+==============================================================================
+INTRODUCTION					*ctrlp-J6uil-introduction*
+
+|J6uil| extension for |CtrlP|.
+
+
+==============================================================================
+REQUIREMENTS					*ctrlp-J6uil-requirements*
+
+- Vim 7.3 or later
+- |CtrlP|
+- |J6uil|
+
+|CtrlP|		(http://ctrlpvim.github.com/ctrlp.vim)
+|J6uil|		(https://github.com/basyura/J6uil.vim)
+
+
+==============================================================================
+INTERFACE					*ctrlp-J6uil-interface*
+------------------------------------------------------------------------------
+COMMANDS					*ctrlp-J6uil-commands*
+
+:CtrlPJ6uilRooms					*:CtrlPJ6uilRooms*
+	Browse J6uil rooms.
+	Also see |<Plug>(J6uil_unite_rooms)|.
+
+:CtrlPJ6uilMembers					*:CtrlPJ6uilMembers*
+	Browse J6uil members of room.
+	Also see |<Plug>(J6uil_unite_members)|.
+
+
+==============================================================================
+CHANGELOG					*ctrlp-J6uil-changelog*
+
+1.0.0	First version.
+
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:noet:fen:
