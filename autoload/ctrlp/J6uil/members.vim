@@ -1,4 +1,3 @@
-scriptencoding utf-8
 " J6uil_members extension for CtrlP
 "
 " Maintainer:   DeaR <nayuri@kuonn.mydns.jp>
@@ -43,9 +42,9 @@ let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)
 
 function! ctrlp#J6uil#members#init()
   return map(s:mem,
-  \ '(v:val.is_online ? "+ " : "  ") .' .
-  \ '(v:val.is_owner ? "★ " : "") . ' .
-  \ 'v:val.name')
+  \ '(v:val.is_online ? "+" : "-") .' .
+  \ '(v:val.is_owner ? "!" : " ") .' .
+  \ '" " . v:val.name')
 endfunction
 
 function! ctrlp#J6uil#members#accept(mode, str)
